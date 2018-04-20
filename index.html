@@ -16,11 +16,25 @@ for (var i = 0; i<array.length; i++) {
       array[i] = engb[i];
     }
   }
+document.getElementById('output').innerHTML = array.join();
 }
-document.body.appendChild()
+function gbtous() {
+str = document.getElementById('textarea').value;
+array = str.split("");
+for (var i = 0; i<array.length; i++) {
+  for(var j = 0; j<engb.length; j++) {
+    if (array[i] == engb[i]) {
+      array[i] = enus[i];
+    }
+  }
+document.getElementById('output').innerHTML = array.join();
+}
 </script>
 </head>
 <body>
-<textarea id='textarea' onchange='main();'></textarea>
+<textarea id='textarea'></textarea>
+<button onclick='ustogb'>To British English</button>
+<button onclick='gbtous'>To American English</button>
+<p id='output'></p>
 </body>
 </html>
