@@ -8,7 +8,7 @@ var str;
 var array;
 function ustogb() {
 str = document.getElementById('textarea').value;
-array = str.split("");
+array = str.split(" ");
 for (var i = 0; i<array.length; i++) {
   for(var j = 0; j<enus.length; j++) {
     if (array[i] == enus[i]) {
@@ -19,7 +19,7 @@ document.getElementById('output').innerHTML = array.join();
 }
 function gbtous() {
 str = document.getElementById('textarea').value;
-array = str.split("");
+array = str.split(" ");
 for (var i = 0; i<array.length; i++) {
   for(var j = 0; j<engb.length; j++) {
     if (array[i] == engb[i]) {
