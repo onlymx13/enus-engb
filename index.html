@@ -11,8 +11,8 @@ str = document.getElementById('textarea').value;
 array = str.split(" ");
 for (var i = 0; i<array.length; i++) {
   for(var j = 0; j<enus.length; j++) {
-    if (array[i] == enus[i]) {
-      array[i] = engb[i];
+    if (array[i] == enus[j]) {
+      array[i] = engb[j];
     }
   }
 }
@@ -23,8 +23,8 @@ str = document.getElementById('textarea').value;
 array = str.split(" ");
 for (var i = 0; i<array.length; i++) {
   for(var j = 0; j<engb.length; j++) {
-    if (array[i] == engb[i]) {
-      array[i] = enus[i];
+    if (array[i] == engb[j]) {
+      array[i] = enus[j];
     }
   }
 }
