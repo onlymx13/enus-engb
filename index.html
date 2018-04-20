@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EN-US to GB-US</title>
+<script>
+var str;
+var array;
+var enus = [];
+var engb = [];
+function ustogb() {
+str = document.getElementById('textarea').value;
+array = str.split("");
+for (var i = 0; i<array.length; i++) {
+  for(var j = 0; j<enus.length; j++) {
+    if (array[i] == enus[i]) {
+      array[i] = engb[i];
+    }
+  }
+}
+document.body.appendChild()
+</script>
+</head>
+<body>
+<textarea id='textarea' onchange='main();'></textarea>
+</body>
+</html>
